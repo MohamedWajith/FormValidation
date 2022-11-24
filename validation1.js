@@ -8,7 +8,7 @@ function checkValidation(){
             var name=document.getElementById("name");
             var photo=document.getElementById("photo");
     
-    console.log("Name : "+name);
+    //console.log("Name : "+name);  
             
             var patnic=/^[0-9]{9}[vVxX]$/;
             var patnewnic=/^[0-9]{12}$/;
