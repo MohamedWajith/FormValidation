@@ -3,8 +3,9 @@
     <head><title>FORM</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     
-    <script src="validation1.js"></script>
+    <script src="jqueryvalidation.js"></script>
     
     </head>
     <body>
@@ -27,7 +28,7 @@
         
         <h2 class="text-center">Registration</h2>
     
-        <form action="#" method="post" onsubmit="return checkValidation()">
+        <form name="form" id="form" action="#" method="post">
         
             
             <div class="form-row">
@@ -56,8 +57,8 @@
             
                 
                 <div class="col-md-4">
-                    <input type="email" class="form-control" id="email"></div>
-                <span id="erroremail"></span>
+                    <input type="email" class="form-control" id="email" name="email"></div>
+                <span class="erroremail" id="erroremail"></span>
             <div class="col-md-3">&nbsp;</div></div>
             
             
@@ -65,7 +66,7 @@
                 <div class="col-md-3">&nbsp;</div>
                 <div class="col-md-3"><p>Password :</p></div>
                 <div class="col-md-4">
-                    <input class="form-control" type="password" id="pwd"></div>
+                    <input class="form-control" type="password" id="pwd" name="pwd"></div>
                 <span id="errorpwd"></span>
                 <div class="col-md-3">&nbsp;</div>
             </div>
@@ -75,7 +76,7 @@
                 <div class="col-md-3">&nbsp;</div><div class="col-md-3"><p>Re-enter Password :</p></div>
                 
                 <div class="col-md-4">
-                    <input class="form-control" type="password" id="pwd2"></div>
+                    <input class="form-control" type="password" id="pwd2" name="pwd"></div>
                 <span id="errorpwd2"></span>
             <div class="col-md-3">&nbsp;</div>
             </div>
@@ -106,7 +107,7 @@
                 <div class="col-md-3">
                     <p>Photo :</p></div>
                 <div class="col-md-4">
-                <input class="form-control" type="file" id="photo"></div>
+                <input class="form-control" type="file" id="photo" name="photo"></div>
                 <span id="errorphoto"></span>
 
             <div class="col-md-3">&nbsp;</div>
